@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/moderno.css" id="theme-link" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <!-- Fuente pixelada para el estilo retro -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="is-preload">
     <!-- Header -->
     <header id="header">
         <h1><a href="index.html">Retro Games Hub</a></h1>
@@ -20,7 +21,9 @@
     <!-- Main -->
     <section id="main" class="wrapper">
         <div class="inner">
-            <h2>Juegos Destacados</h2>
+            <header class="major">
+                <h2>Juegos Destacados</h2>
+            </header>
             <div class="games-grid">
                 <div class="game-item">
                     <h3>Pac-Man</h3>
@@ -41,14 +44,18 @@
     <!-- Footer -->
     <footer id="footer" class="wrapper">
         <div class="inner">
-            <div class="copyright">
-                &copy; 2025 Retro Games Hub. Todos los derechos reservados.
-            </div>
+            <ul class="menu">
+                <li>&copy; 2025 Retro Games Hub. Todos los derechos reservados.</li>
+            </ul>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         function cambiarTema() {
